@@ -55,11 +55,12 @@ function login (loginData) {
             }
 
             window.localStorage.setItem("login-data", JSON.stringify(loginData));
-            window.location.assign("/posts");  // redirect
+            window.location.assign("./posts/index.html");  // redirect
 
             return loginData;
         });
 }
+
 
 
 // This is the `logout()` function you will use for any logout button
