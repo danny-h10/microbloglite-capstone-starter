@@ -17,15 +17,7 @@
     <!-- Page-specific CSS -->
     <link rel="stylesheet" href="../landing.css">
 
-    <title>Login to the Microblog Network!</title>
-
-    <!-- Run BEFORE page is finished loading (before window.onload - don't add the `defer` attribute): -->
-    <script src="../auth.js"></script>
-    <!-- <script>
-    if (isLoggedIn() === true) window.location.replace("http://microbloglite.us-east-2.elasticbeanstalk.com/api/posts");
-</script> -->
-
-
+    <title>Signup for Microblog Network!</title>
 </head>
 
 <body>
@@ -34,8 +26,11 @@
     <div>
         <form id="signup">
             <input type="text" name="username" placeholder="Username" required>
+            <br>
             <input type="text" name="fullName" placeholder="Full Name" required>
+            <br>
             <input type="password" name="password" placeholder="Password" required>
+            <br>
             <button type="submit">Sign up</button>
         </form>
     </div>

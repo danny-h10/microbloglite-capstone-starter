@@ -18,7 +18,7 @@ const signUp = async (event) => {
     //generate a new form data object
     let formData = new FormData(event.target);
 
-    //generate a JavaScript Object from the formData object created above
+    //generate a JavaScript Object from the formData object created aboveS
     let formDataAsObject = Object.fromEntries(formData);
 
     //try catch for error handling
@@ -36,11 +36,10 @@ const signUp = async (event) => {
         //turn the response in to something we can work with
         let newUser = await response.json();
 
-        //put the comments in the console
+
         console.log(newUser, "Created new user!")
 
-        // window.location.href = "/";
-
+        
     } catch (err) {
 
         //what the hell happend
