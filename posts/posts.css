@@ -1,1 +1,38 @@
 /* Posts Page CSS */
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#postsContainer {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.author {
+    font-weight: bold;
+}
+
+.timestamp {
+    font-style: italic;
+}
