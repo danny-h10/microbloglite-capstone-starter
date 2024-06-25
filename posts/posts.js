@@ -9,7 +9,7 @@ window.onload = () => {
 
 
 
-function getLoginData () {
+function getLoginData() {
     const loginJSON = window.localStorage.getItem("login-data");
     return JSON.parse(loginJSON) || {};
 }
@@ -37,7 +37,7 @@ const getPostsAsyncExample = async () => {
 
 
     const displayElement = document.getElementById('postsContainer');
-    
+
     // Create a string or element to display the data
     // Here is an example for a list of items
     let html = '<ul>';
@@ -47,23 +47,17 @@ const getPostsAsyncExample = async () => {
             <p class="timestamp"><strong>Timestamp:</strong> ${new Date(item.createdAt).toLocaleString()}</p>`;
     });
     html += '</ul>';
-    
+
     displayElement.innerHTML = html;
 }
 
-
-
-
-
-
-
-function logout () {
+function logout() {
     const loginData = getLoginData();
 
     // GET /auth/logout
-    const options = { 
+    const options = {
         method: "GET",
-        headers: { 
+        headers: {
             // This header is how we authenticate our user with the
             // server for any API requests which require the user
             // to be logged-in in order to have access.

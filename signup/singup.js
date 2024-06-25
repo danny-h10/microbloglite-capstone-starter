@@ -39,7 +39,7 @@ const signUp = async (event) => {
 
         console.log(newUser, "Created new user!")
 
-        
+
     } catch (err) {
 
         //what the hell happend
