@@ -24,16 +24,29 @@
     <!-- Run BEFORE page is finished loading (before window.onload): -->
     <script src="../auth.js"></script>
     <script>
-        if (isLoggedIn() === false) window.location.replace("/");
+        if (isLoggedIn() === false) window.location.replace("https://www.google.com/")
     </script>
 </head>
 <body>
 
     <header>
         <h1>POSTS PAGE</h1>
+        <a href="../profile/index.html"><h3>Profile Page</h3></a>
     </header>
+    <button  onclick="logout()">Logout</button>
 
-    <main></main>
+
+    <main>
+
+        <div class="container" id="postsContainer">
+            <h1>All Posts</h1>
+
+        </div>
+
+
+
+    </main>
+
 
     <footer></footer>
 

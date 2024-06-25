@@ -35,6 +35,52 @@ const getPostsAsyncExample = async () => {
     //do something with the posts
     console.log(data, "using async/await")
 
+
+    const displayElement = document.getElementById('postsContainer');
+    
+    // Create a string or element to display the data
+    // Here is an example for a list of items
+    let html = '<ul>';
+    data.forEach(item => {
+        html += `<h3>${item.text}</h3>
+            <p class="author"><strong>Author:</strong> ${item.username}</p>
+            <p class="timestamp"><strong>Timestamp:</strong> ${new Date(item.createdAt).toLocaleString()}</p>`;
+    });
+    html += '</ul>';
+    
+    displayElement.innerHTML = html;
 }
 
 
+
+
+
+
+
+function logout () {
+    const loginData = getLoginData();
+
+    // GET /auth/logout
+    const options = { 
+        method: "GET",
+        headers: { 
+            // This header is how we authenticate our user with the
+            // server for any API requests which require the user
+            // to be logged-in in order to have access.
+            // In the API docs, these endpoints display a lock icon.
+            Authorization: `Bearer ${loginData.token}`,
+        },
+    };
+
+    fetch(apiBaseURL + "/auth/logout", options)
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .finally(() => {
+            // We're using `finally()` so that we will continue with the
+            // browser side of logging out (below) even if there is an 
+            // error with the fetch request above.
+
+            window.localStorage.removeItem("login-data");  // remove login data from LocalStorage
+            window.location.assign("https://www.google.com/");  // redirect back to landing page
+        });
+}
