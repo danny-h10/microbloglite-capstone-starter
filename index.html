@@ -31,24 +31,26 @@
 <body>
 
     <header>
-        <h1>Welcome to <code>YOUR MICROBLOG NETWORK</code></h1>
+        <h1>Welcome to <code>Yapper</code></h1>
     </header>
 
     <main>
 
         <form id="login">
-            <div>
+            <div class="input-group">
                 <label for="username">Username</label>
                 <input type="text" id="username" minlength="3">
             </div>
 
-            <div>
+            <div class="input-group">
                 <label for="password">Password</label>
                 <input type="password" id="password" minlength="6">
             </div>
 
-            <button id="loginButton" type="submit">Login</button>
-            <button onclick="goToSignup()"> Sign Up</button>
+            <button id="loginButton" class="login-button" type="submit">Login</button>
+            <br>
+            <br>
+            <button class="login-button" onclick="goToSignup()"> Sign Up</button>
         </form>
 
     </main>

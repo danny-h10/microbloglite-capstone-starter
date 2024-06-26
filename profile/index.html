@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../global.css">
 
     <!-- Page-specific CSS -->
-    <link rel="stylesheet" href="../posts/posts.css">
+    <link rel="stylesheet" href="../profile/profile.css">
 
     <title>/POSTS</title>
 
@@ -25,7 +25,7 @@
     <script src="../auth.js"></script>
     <script>
 
-        if (isLoggedIn() === false) window.location.replace("https://www.google.com/");
+        if (isLoggedIn() === false) window.location.replace("./index.html");
     </script>
 </head>
 
@@ -41,19 +41,14 @@
     <br>
     <main>
         <section>
-            <form id="newPostForm">
-                <div>
-                    <label for="text">Add Post</label>
-                </div>
-                <div>
-                    <textarea name="text" id="text"></textarea>
-                </div>
-                <div>
-                    <button type="submit">Post</button>
-                </div>
-
-            </form>
-
+           
+                <form class="status-update-form" id="newPostForm">
+                    <textarea class="status-input" placeholder="What's on your mind?" name="text" id="text"></textarea>
+                    <div class="status-actions">
+                        <button type="submit" class="status-submit">Post</button>
+                    </div>
+                </form>
+           
         </section>
 
     </main>

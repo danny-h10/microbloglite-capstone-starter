@@ -42,9 +42,11 @@ const getPostsAsyncExample = async () => {
     // Here is an example for a list of items
     let html = '<ul>';
     data.forEach(item => {
-        html += `<h3>${item.text}</h3>
-            <p class="author"><strong>Author:</strong> ${item.username}</p>
-            <p class="timestamp"><strong>Timestamp:</strong> ${new Date(item.createdAt).toLocaleString()}</p>`;
+        html += `
+            <div><p class="author"><strong>@</strong>${item.username}</p>
+            <h3>${item.text}</h3>
+            <p class="timestamp"><strong>Date:</strong> ${new Date(item.createdAt).toLocaleString()}</p>
+            </div>`;
     });
     html += '</ul>';
 
@@ -75,6 +77,6 @@ function logout() {
             // error with the fetch request above.
 
             window.localStorage.removeItem("login-data");  // remove login data from LocalStorage
-            window.location.assign("https://www.google.com/");  // redirect back to landing page
+            window.location.assign("./index.html");  // redirect back to landing page
         });
 }
