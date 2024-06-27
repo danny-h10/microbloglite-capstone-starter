@@ -1,9 +1,7 @@
-/* Posts Page CSS */
 
-
-body {
+main {
     font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
     display: flex;
@@ -12,13 +10,14 @@ body {
     flex-direction: column;
 }
 
+
 #postsContainer {
     width: 100%;
-    max-width: 600px;
     margin-top: 20px;
+    background-color: #ffffff;
 }
 
-.item {
+.post {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -26,6 +25,7 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    overflow-wrap:break-word ;
 }
 
 
