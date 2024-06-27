@@ -1,77 +1,65 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  body {
-    background: #f0f2f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .status-update-container {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    width: 100%;
-    padding: 20px;
-    display: flex;
-  }
-  
-  .status-update-form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .profile-pic-container {
-    display: flex;
-    align-items: flex-start;
-    margin-right: 15px;
-  }
-  
-  .profile-pic {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-  
-  .status-input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    font-size: 16px;
-    resize: none;
-    outline: none;
-  }
-  
-  .status-input::placeholder {
-    color: #aaa;
-  }
-  
-  .status-actions {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .status-submit {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background: #1877f2;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .status-submit:hover {
-    background: #155bb5;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+main {
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.status-update-container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+}
+
+.status-update-form {
+
+  display: flex;
+  flex-direction: column;
+}
+
+.status-input {
+  width: 500px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  resize: none;
+  outline: none;
+}
+
+.status-input::placeholder {
+  color: #aaa;
+}
+
+.status-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.status-submit {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #1877f2;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.status-submit:hover {
+  background: #155bb5;
+}
