@@ -1,5 +1,3 @@
-/* auth.js provides LOGIN-related functions */
-
 "use strict";
 
 const apiBaseURL = "http://microbloglite.us-east-2.elasticbeanstalk.com";
@@ -55,12 +53,11 @@ function login (loginData) {
             }
 
             window.localStorage.setItem("login-data", JSON.stringify(loginData));
-            window.location.assign("./posts/index.html");  // redirect
+            window.location.assign("/posts");  // redirect
 
             return loginData;
         });
 }
-
 
 
 // This is the `logout()` function you will use for any logout button
@@ -91,6 +88,6 @@ function logout () {
             // error with the fetch request above.
 
             window.localStorage.removeItem("login-data");  // remove login data from LocalStorage
-            window.location.assign("./index.html");  // redirect back to landing page
+            window.location.assign("/");  // redirect back to landing page
         });
 }
