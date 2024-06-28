@@ -36,15 +36,24 @@ const signUp = async (event) => {
         //turn the response in to something we can work with
         let newUser = await response.json();
 
+        const responseCode = response.status;
 
-        console.log(newUser, "Created new user!")
+        // this is may or may not the best way to handle errors but it covers everything? idk will have to ask
+        switch (responseCode) {
+            case 201:
+                alert("Success! New user created");
+                window.location.href = "/"
+                break;
+            case 400:
+                alert("Bad request :L")
+                break;
+            case 409:
+                alert("Sorry, that user already exists");
+                break;
+        }
 
-
-    } catch (err) {
-
-        //what the hell happend
-        console.log("Error something is broken")
-
+    } catch (error) {
+        alert("Something went wrong :L");
+        console.log(error);
     }
-
 }
