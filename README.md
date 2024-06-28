@@ -26,7 +26,10 @@ index.html, posts.css, posts.js
 As well as a home page that includes
 <br>
 index.html, landing.css, landing.js, auth,js
+<br>
 
+<h1>Most intersting</h1>
+<br>
 My most interesting piece of code for me was definitly trying to get the desgin for the posts to work 
 main {
     font-family: Arial, sans-serif;
