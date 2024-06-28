@@ -12,3 +12,56 @@ The Languages used in this project is HTML, CSS, and Javascript along with a few
 <h1>Signup</h1>
 <br>
 index.html, singup.css, singup.js
+
+<h1>Profile</h1>
+<br>
+index.html, profile.css, profile.js
+
+<h1>Posts</h1>
+<br>
+index.html, posts.css, posts.js
+
+<br>
+
+As well as a home page that includes
+<br>
+index.html, landing.css, landing.js, auth,js
+
+My most interesting piece of code for me was definitly trying to get the desgin for the posts to work 
+main {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#postsContainer {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+
+.post {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-wrap:break-word ;
+}
+
+
+.author {
+    font-weight: bold;
+}
+
+.timestamp {
+    font-style: italic;
+}

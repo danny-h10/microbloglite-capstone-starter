@@ -41,14 +41,14 @@ const signUp = async (event) => {
         // this is may or may not the best way to handle errors but it covers everything? idk will have to ask
         switch (responseCode) {
             case 201:
-                alert("Success! New user created");
+                alert("New user created");
                 window.location.href = "/"
                 break;
             case 400:
                 alert("Bad request :L")
                 break;
             case 409:
-                alert("Sorry, that user already exists");
+                alert("User Exists");
                 break;
         }
 
